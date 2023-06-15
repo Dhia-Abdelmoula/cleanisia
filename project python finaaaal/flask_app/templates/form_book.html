@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        section#contact {
+            background-color: #212529;
+            background-image: none !important;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+    </style>
+</head>
+
+<body>
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Book Now !</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Calendar -->
+                        <div class="row align-items-stretch mb-5">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <!-- Calendar input -->
+                                    <input class="form-control" id="calendar" type="date" placeholder="Select a Date *"
+                                        data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="calendar:required">A date is
+                                        required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <!-- Clock input -->
+                                    <input class="form-control" id="clock" type="time" placeholder="Select a Time *"
+                                        data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="clock:required">A time is required.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Select tags -->
+                        <div class="row align-items-stretch mb-5 text-center">
+                            <div class="form-group" style="color: white;">
+                                <label>Deep cleaning</label>
+                                <span></span>
+                                <div class="radio-buttons">
+                                    <label>
+                                        <input type="radio" name="toggle" value="show" onclick="toggleSelectTags(true)">
+                                        <span class="radio-label">Yes</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="toggle" value="hide" onclick="toggleSelectTags(false)" checked>
+                                        <span class="radio-label">No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="select1" style="display: none;" data-sb-validations="required">
+                                        <option value="">Select Option 1 *</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <div class="invalid-feedback" data-sb-feedback="select1:required">Please select an option.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="select2" style="display: none;" data-sb-validations="required">
+                                        <option value="">Select Option 2 *</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <div class="invalid-feedback" data-sb-feedback="select2:required">Please select an option.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="select3" style="display: none;" data-sb-validations="required">
+                                        <option value="">Select Option 3 *</option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <div class="invalid-feedback" data-sb-feedback="select3:required">Please select an option.</div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <!-- Submit success message -->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center text-white mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message -->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Submit Button -->
+        <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
+                type="submit">Book A Cleaner</button></div>
+    </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
